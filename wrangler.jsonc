@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "octo",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-16",
+  "routes": [{ "pattern": "octo.twaddle.lug", "custom_domain": true }],
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "0",
+      "simple": {
+        "limit": 60,
+        "period": 60,
+      },
+    },
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+}

@@ -2,8 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "octo",
   "main": "src/index.ts",
-  "compatibility_date": "2026-04-16",
-  "routes": [{ "pattern": "octo.twaddle.lug", "custom_domain": true }],
+  "compatibility_date": "2026-05-11",
+  "routes": [{ "pattern": "octo.twaddlelug.dev", "custom_domain": true }],
   "ratelimits": [
     {
       "name": "RATE_LIMITER",
